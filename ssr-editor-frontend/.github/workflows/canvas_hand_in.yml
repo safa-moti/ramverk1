@@ -1,0 +1,20 @@
+name: kmom-complete
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - run: |
+        curl -H 'Content-Type: application/json' \
+          -d '{ "course": "jsramverk", "ref": "${{ github.head_ref }}", "repo": "${{ github.repository }}", "teacher": "${{ github.triggering_actor }}"}' \
+          -X POST \
+          https://canvas-gateway.emilfolino.se
