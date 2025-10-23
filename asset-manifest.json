@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ssr-editor-frontend/static/js/main.ec23079d.js",
+    "main.js": "/ssr-editor-frontend/static/js/main.ad9491f4.js",
     "index.html": "/ssr-editor-frontend/index.html",
-    "main.ec23079d.js.map": "/ssr-editor-frontend/static/js/main.ec23079d.js.map"
+    "main.ad9491f4.js.map": "/ssr-editor-frontend/static/js/main.ad9491f4.js.map"
   },
   "entrypoints": [
-    "static/js/main.ec23079d.js"
+    "static/js/main.ad9491f4.js"
   ]
 }
